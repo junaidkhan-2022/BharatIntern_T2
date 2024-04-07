@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,300&display=swap');
+*{
+    margin: 0%;
+    padding: 0;
+    font-family: "cursive";
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0 ,17, 50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(imgg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    opacity: 0.4;
+}
+
+.weather{
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    background-color: rgba(45, 45, 45, 0.47);
+    color: aliceblue;
+    padding: 3rem;
+    border-radius: 5px;
+}
+ 
+.weather div{
+    margin: 0.625rem;
+}
+.weather1{
+    font-size: 4rem;
+}
+
+.weather p {
+    font-size: 2rem;
+}
+
+.weather span {
+    font-size: 0.75rem;
+}
+
+.weather3 span{
+    margin: 0.3rem;   
+}
+
+.weather3 img {
+    width: 2rem;
+}
+
+nav{
+    height: 100px;
+    border-radius: 100px 100px 0 0;
+    padding: 1rem 0;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 18);
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    background-color: rgba(180, 177, 177, 0.075);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav form{
+    width: 70%;
+    
+    grid-template-columns: 5fr 1fr;
+    display: grid;
+}
+
+.serchField{
+    font-size: 1.1rem;
+    outline: none;
+    color: white;
+    background-color: transparent;
+    padding: 1rem 0;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+nav form button{
+    background-color: rgb(54, 149, 227);
+    border-radius: 0 25px 25px 0;
+    font-size: 1.1rem;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+@media (max-width:799px) {
+    
+    .container{
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .weather{
+        padding: 5rem 2rem;
+        margin: 2px 1rem;
+    }
+    .weather div{
+        margin: 10px;
+    }
+    .weather1{
+        font-size: 2.5rem;
+    }
+    
+    .weather p {
+        font-size: 1.5rem;
+    }
+    
+    .weather span {
+        font-size: 0.60rem;
+    }
+    nav form button{
+        font-size: 0.50rem;
+    }
+}
